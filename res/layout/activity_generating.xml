@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/th__2_"
+    tools:context=".ui.gui.GeneratingActivity">
+
+    <ImageButton
+        android:id="@+id/manualButton"
+        android:layout_width="73dp"
+        android:layout_height="73dp"
+        android:contentDescription="@string/Manual"
+        android:scaleType="fitXY"
+        android:scaleX="1"
+        android:scaleY="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/wizardButton"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.74"
+        app:srcCompat="@drawable/th" />
+
+    <ImageButton
+        android:id="@+id/wizardButton"
+        android:layout_width="73dp"
+        android:layout_height="73dp"
+        android:contentDescription="@string/Wizard"
+        android:scaleType="fitXY"
+        android:scaleX="1"
+        android:scaleY="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/wallfollowerButton"
+        app:layout_constraintHorizontal_bias="0.721"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.74"
+        app:srcCompat="@drawable/a70205477004df2598d3a8d5b29098dc" />
+
+    <ImageButton
+        android:id="@+id/wallfollowerButton"
+        android:layout_width="73dp"
+        android:layout_height="73dp"
+        android:contentDescription="@string/Wallfollower"
+        android:scaleType="fitXY"
+        android:scaleX="1"
+        android:scaleY="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.822"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.74"
+        app:srcCompat="@drawable/th__1_" />
+
+    <Spinner
+        android:id="@+id/robotConfig"
+        android:layout_width="254dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="232dp"
+        android:dropDownWidth="match_parent"
+        android:entries="@array/config_choices"
+        android:spinnerMode="dialog"
+        app:layout_constraintBottom_toTopOf="@+id/wallfollowerButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.707" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="71dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Select a configuration:"
+        app:layout_constraintBottom_toTopOf="@+id/robotConfig"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/select_a_config" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Select a mode:"
+        app:layout_constraintBottom_toTopOf="@+id/wizardButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/robotConfig"
+        app:layout_constraintVertical_bias="0.674"
+        tools:text="@string/select_a_mode" />
+
+    <ProgressBar
+        android:id="@+id/loadingBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="186dp"
+        android:layout_height="66dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0"
+        android:progressTint="@android:color/holo_green_dark"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/robotConfig" />
+
+    <Button
+        android:id="@+id/ret2title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return to title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.913" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

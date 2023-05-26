@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/back2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/istockphoto_1094360780_612x612"
+    tools:context=".ui.gui.PlayManuallyActivity">
+
+    <ImageButton
+        android:id="@+id/rightButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="28dp"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="@+id/downButton"
+        app:layout_constraintEnd_toEndOf="@+id/shortcut"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toEndOf="@+id/leftButton"
+        app:layout_constraintTop_toTopOf="@+id/upButton"
+        app:layout_constraintVertical_bias="0.09"
+        app:srcCompat="@android:drawable/arrow_up_float" />
+
+    <ImageButton
+        android:id="@+id/downButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="604dp"
+        android:layout_marginEnd="36dp"
+        android:rotation="180"
+        app:layout_constraintBottom_toTopOf="@+id/back2title"
+        app:layout_constraintEnd_toEndOf="@+id/rightButton"
+        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintStart_toStartOf="@+id/leftButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.121"
+        app:srcCompat="@android:drawable/arrow_up_float" />
+
+    <ImageButton
+        android:id="@+id/leftButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:rotation="270"
+        app:layout_constraintBottom_toBottomOf="@+id/downButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.357"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/upButton"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/arrow_up_float" />
+
+    <ImageButton
+        android:id="@+id/zoomOut"
+        android:layout_width="55dp"
+        android:layout_height="57dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/shortcut"
+        app:layout_constraintEnd_toEndOf="@+id/showSolution"
+        app:layout_constraintHorizontal_bias="0.864"
+        app:layout_constraintStart_toStartOf="@+id/showSolution"
+        app:layout_constraintTop_toBottomOf="@+id/showSolution"
+        app:layout_constraintVertical_bias="0.146"
+        app:srcCompat="@android:drawable/btn_minus" />
+
+    <ToggleButton
+        android:id="@+id/showMaze"
+        android:layout_width="158dp"
+        android:layout_height="49dp"
+        android:background="@color/purple_500"
+        android:text="ToggleButton"
+        android:textOff="Showing Maze"
+        android:textOn="Not Showing Maze"
+        app:layout_constraintBottom_toTopOf="@+id/showWalls"
+        app:layout_constraintEnd_toStartOf="@+id/showSolution"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/showWalls"
+        android:layout_width="158dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="108dp"
+        android:background="@color/purple_500"
+        android:text="ToggleButton"
+        android:textOff="Showing Visible Walls"
+        android:textOn="Not Showing Visible Walls"
+        app:layout_constraintBottom_toTopOf="@+id/shortcut"
+        app:layout_constraintEnd_toStartOf="@+id/zoomIn"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ToggleButton
+        android:id="@+id/showSolution"
+        android:layout_width="158dp"
+        android:layout_height="49dp"
+        android:background="@color/purple_500"
+        android:text="ToggleButton"
+        android:textOff="Showing Solution"
+        android:textOn="Not Showing Solution"
+        app:layout_constraintBottom_toTopOf="@+id/showWalls"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.865"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.49" />
+
+    <ImageButton
+        android:id="@+id/zoomIn"
+        android:layout_width="61dp"
+        android:layout_height="55dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/shortcut"
+        app:layout_constraintEnd_toStartOf="@+id/zoomOut"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toEndOf="@+id/showMaze"
+        app:layout_constraintTop_toBottomOf="@+id/showSolution"
+        app:layout_constraintVertical_bias="0.155"
+        app:srcCompat="@android:drawable/btn_plus" />
+
+    <ImageButton
+        android:id="@+id/upButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/downButton"
+        app:layout_constraintEnd_toStartOf="@+id/rightButton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/leftButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.949"
+        app:srcCompat="@android:drawable/arrow_up_float" />
+
+    <Button
+        android:id="@+id/shortcut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="shortcut"
+        app:layout_constraintBottom_toTopOf="@+id/upButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/back2title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return to Title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <com.example.amazebyrobertlamb.ui.gui.MazePanel
+        android:id="@+id/mazePanel"
+        android:layout_width="202dp"
+        android:layout_height="172dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/downButton"
+        app:layout_constraintEnd_toStartOf="@+id/rightButton"
+        app:layout_constraintHorizontal_bias="0.312"
+        app:layout_constraintStart_toStartOf="@+id/leftButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        tools:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/jumpButton"
+        android:layout_width="61dp"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toEndOf="@+id/rightButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.838"
+        android:background="@color/red" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">AMazeByRobertLamb</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string-array name="config_choices">
+        <item>Premium</item>
+        <item>Mediocre</item>
+        <item>Soso</item>
+        <item>Shaky</item>
+    </string-array>
+    <string-array name="maze_gen_choices">
+        <item>DFS</item>
+        <item>Prim\'s</item>
+        <item>Boruvka</item>
+    </string-array>
+    <string name="Premium">Premium</string>
+    <string name="Mediocre">Mediocre</string>
+    <string name="Soso">Soso</string>
+    <string name="Shaky">Shaky</string>
+    <string name="Manual">Manual</string>
+    <string name="Wizard">Wizard</string>
+    <string name="Wallfollower">Wallfollower</string>
+    <string name="select_a_config">Select a configuration:</string>
+    <string name="select_a_mode">Select a mode:</string>
+</resources>
